@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kosztów przejazdu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="car_declaration">
+        <div class="car_type">
+            <label>Wybierz Typ Samochodu</label>
+            <select id="carType">
+                <option value="1">Samochód Osobowy</option>
+                <option value="2">Samochód Ciężarowy</option>
+                <option value="3">Bus</option>
+                <option value="4">Autobus</option>
+            </select>
+        </div>
+        <div>
+            <label>Wpisz Ilość Przejechanych Kilometrów</label>
+            <input id="kilometer">
+        </div>
+
+        <div class="engine_type">
+            <label>Wybierz Rodzaj Silnika</label>
+            <select id="engineType">
+                <option value="1">Silnik Benzynowy</option>
+                <option value="2">Silnik Diesla</option>
+                <option value="3">Silnik LPG</option>
+                <option value="4">Silnik Hybrydowy</option>
+                <option value="5">Silnik Elektryczny</option>
+            </select>
+        </div>
+    </div>
+
+        <div class="fuel_declaration">
+            <div class="fuel_cost">
+                <label>Podaj cenę paliwa</label>
+                <input id="fuelCost">
+            </div>
+            <div class="combusion">
+            <label>Podaj średnie spalanie/100km</label>
+            <input id="combustion">
+            </div>
+        </div>
+    
+
+    <div class="people_type">
+        <p>Wybierz Ilość Osób</p>
+        <div id="peopleType">
+            <label>Dorośli:</label>
+            <input id="adult">
+            <label>Dzieci do 12 roku życia:</label>
+            <input id="childTo12Year">
+            <label>Dzieci powyżej 12 roku życia:</label>
+            <input id="childOver12Year">
+        </div>
+    </div>
+
+    <div class="calculate">
+       <div class="operationResult">
+            <h2>WYLICZENIA</h2>
+            <div id="carPrice">
+                Koszt za typ samochodu:
+                <span></span>
+            </div>
+            <div id="kilometerPrice">
+                Koszt za przejechane kilometry:
+                <span></span>
+            </div>
+            <div id="enginePrice">
+                Koszt za posiadany silnik:
+                <span></span>
+            </div>
+            <div id="peoplePrice">
+                Koszt za ilość osób
+                <p>Osoby dorosłe: <span id="adultPrice"></span></p>
+                <p>Dzieci do 12 roku życia: <span id="childTo12YearPrice"></span></p>
+                <p>Dzieci powyżej 12 roku życia: <span id="childOver12YearPrice"></p>
+            </div>
+            <div>
+                Koszt za zużyte paliwo: <span id="fuelCostScore"></span>
+            </div>
+        </div>
+        <div class="calculate_button">
+            <button id="calculate">OBLICZ</button>
+            <button id="reset">RESETUJ</button>
+        </div>
+    
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

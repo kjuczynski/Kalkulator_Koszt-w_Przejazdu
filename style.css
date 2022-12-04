@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background-image: url("./img/bgp.jpg");
+    max-width: 1600px;
+    color: white;
+    margin: 30px 30px 30px 30px;
+}
+
+.car_declaration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 30px;
+}
+
+ #carType, #engineType, #kilometer, #fuelCost, #combustion{
+    width: 200px;
+    height: 30px;
+ }
+
+.fuel_declaration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-right: 600px;
+    font-size: 30px;
+    
+}
+
+.people_type{
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.people_type label{
+    margin-left: 45px;
+}
+
+.operationResult{
+    margin: 15px 0px 0px 25px;
+}
+
+.calculate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calculate_button{
+    display: flex;
+    flex-direction: column;
+}
+
+#calculate{
+    border: 8px solid black;
+    font-size:50px;
+    width: 324px;
+    height: 91px;
+    margin-top: 110px;
+    margin-right: 200px;
+}
+
+#reset{
+    border: 8px solid black;
+    font-size:50px;
+    width: 324px;
+    height: 91px;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+
+
